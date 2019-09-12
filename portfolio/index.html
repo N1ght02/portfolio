@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    function navTo(element) {
+
+      var ele = document.getElementById(element);
+
+      window.scrollTo(ele.offsetLeft, ele.offsetTop);
+
+    }
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+  </script>
+
+
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div id="home"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a onclick='navTo("home");'>Home</a>
+    <a onclick='navTo("about");'>About Me</a>
+    <a onclick='navTo("projects");'>Projects</a>
+    <a onclick='navTo("skills");'>Skills</a>
+    <a onclick='navTo("contact");'>Contact Me</a>
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+  <span class="hehexd" onclick="openNav()"><img class="menustreepjes" src="https://icon-library.net/images/white-menu-icon/white-menu-icon-4.jpg"></span>
+
+
+  <h1 class="hoofd1">Flint Vladimir Naafs</h1>
+  <h2 class="hoofd2">FullStack Webdevolper</h2>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <div class="down">
+    <img src="https://www.rdesign.nl/wp-content/uploads/2019/03/arrow-down.gif" alt="scroll down" class="down">
+  </div>
+  <div id="about">
+  </div>
+
+  <h2 class="hoofd1">About me</h2>
+  <h2 class="hoofd3">Daily Life</h2>
+  <img class="ik" src="img/flex.gif" alt="ik">
+  <p class="aboutme">This is me, my name is Flint Vladimir Naafs this is a website all about me (how great!).
+    I am 17 years old, born and raised in Amsterdam, And currently in my seccond year of the study media development at MediaCollege Amsterdam.
+    I try to focus on both front and backend but my preference goes to frontend.
+
+  </p>
+  <h2 class="hoofd4">Hobbies</h2>
+  <img class="boksen" src="img/boksen.gif" alt="bosken">
+  <p class="myhobbies">My hobbies as you may have already seen on the gif
+    are boxing and fitness.
+    5 days of the week im at the gym (basic fit) ,
+    the other two days im at the gym where I box (eastbound).
+    Next to working out I like playing video games here and there (overwatch, league of legends).
+  </p>
+
+  <h2 class="hoofd5">Work</h2>
+  <img class="koken" src="img/koken.gif" alt="koken">
+  <p class="werk">This is a gif of me cooking in a cooking class i took when i was travelling China
+    i took the cooking class because I am intrested in cooking.
+    but for now i am a waiter at the seafoodbar at the van baerle street in Amsterdam
+    And i try to practice coding as much as i can.
+
+  </p>
+
+  <div id="projects"></div>
+
+
+  <h2 class="hoofd6">Projects</h2>
+  <div class="projects">
+
+    <div class="border">
+
+      <img class="project-image" id="img1" src="img/tower.png" alt="towerr">
+
+      <div id="myModalimg1" class="modal">
+
+        <span id="closeimg1" class="close">&times;</span>
+
+        <div class="modalbord">
+          <img class="modal-content" id="img01">
+          <h2 class="towerhoofd">Graphic Tower - Social Media Platform</h2>
+          <img src="img/tower.png" class="modal-content" id="img02">
+          <div class="wrapper">
+            <a href="http://flintvladimirnaafs.nl/projectwall/" target="_blank" class="button">To project</a>
+          </div>
+          <p class="uitlegtower">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal Content (The Image) -->
+
+
+    <div class="border">
+      <img class="project-image" id="img2" src="img/myband.jpg" alt="">
+      <div id="myModalimg2" class="modal">
+
+        <span id="closeimg2" class="close">&times;</span>
+
+        <div class="modalbord">
+          <h2 class="towerhoofd">My Band - Website About Something you like</h2>
+          <img src="img/myband.jpg" class="modal-content" id="img01">
+
+          <div class="wrapper">
+            <a href="http://flintvladimirnaafs.nl/mybandt1/public/" target="_blank" class="button">To project</a>
+            <p class="uitlegmyband">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+              aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border">
+      <img class="project-image" id="img3" src="img/pixelperfect.png" alt="">
+      <div id="myModalimg3" class="modal">
+
+        <span id="closeimg3"  class="close">&times;</span>
+
+        <div class="modalbord">
+          <img class="modal-content" id="img01">
+          <h2 class="towerhoofd">Pixel Perfect - Make a site from a design</h2>
+          <img src="img/pixelperfect.png" class="modal-content" id="img03">
+          <div class="wrapper">
+            <a href="http://flintvladimirnaafs.nl/pixelperfect/" target="_blank" class="button">To project</a>
+            <p class="uitlegmyband">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+              aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills"></div>
+
+  <h2 class="hoofd7">Skills</h2>
+  <h4> HTML5 </h4>
+    <br>
+    <div id="myProgress">
+      <div id="myBar">90%</div>
+    </div>
+    <br><br>
+    <h4> JavaScript </h4>
+      <br>
+
+      <div id="myProgress">
+        <div id="myBar2">45%</div>
+      </div>
+      <br><br>
+    <h4> CSS3 </h4>
+      <br>
+      <div id="myProgress">
+        <div id="myBar">90%</div>
+      </div>
+      <br><br>
+    <h4> PHP </h4>
+      <br>
+      <div id="myProgress">
+        <div id="myBar3">55%</div>
+      </div>
+<br><br>
+  <div class="container">
+  <div style="text-align:center">
+    <h2 class="hoofd8">Contact Me</h2>
+    <p class="corny">"Help me, Obi-Wan Kenobi. Leave a message. You're my only hope!"</p>
+  </div>
+  <div class="row">
+    <div class="column">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.864366659426!2d4.853901815801013!3d52.391009053532976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e28849730d2f%3A0x5dffd675d740eddb!2sMediacollege%20Amsterdam!5e0!3m2!1snl!2snl!4v1568223958000!5m2!1snl!2snl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+  <script>
+    var images = document.getElementsByClassName('project-image');
+
+    for (let i = 0; i < images.length; i++) {
+      images[i].onclick = function() {
+        let imgId = images[i].id;
+
+        let modal = document.getElementById("myModal" + imgId);
+        var closebtn = document.getElementById("close" + imgId);
+
+  modal.style.display = "block";
+
+        closebtn.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        closebtn.onclick = function() {
+          modal.style.display = "none";
+        }
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
